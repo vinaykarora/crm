@@ -33,7 +33,7 @@ module.exports = (config) => {
         const { servicename, serviceversion } = req.params;
 
         const svc = serviceRegistry.get(servicename, serviceversion);
-        if (!svc) return res.status[400].json({ result: 'Service not found' });
+        if (!svc) return res.status(400).json({ result: 'Service not found' });
         return res.json(svc);
     });
 
