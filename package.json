@@ -1,0 +1,34 @@
+{
+  "name": "service-registry",
+  "version": "1.0.0",
+  "description": "A service to manage speakers",
+  "scripts": {
+    "start": "node bin/run | bunyan"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "bunyan": "^1.8.12"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinaykarora/crm.git"
+  },
+  "author": "Vinay Arora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinaykarora/crm/issues"
+  },
+  "homepage": "https://github.com/vinaykarora/crm#readme"
+}
