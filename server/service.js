@@ -30,7 +30,11 @@ module.exports = (config) => {
     });
 
     service.get('/find/:servicename/:serviceversion', (req, res, next) => {
-        return next('Not implemented');
+        const { servicename, serviceversion } = req.params;
+
+        const svc = serviceRegistry.get(servicename, serviceversion);
+        if (!svc) return res.status[400].json({ result: 'Service not found' });
+        return res.json(svc);
     });
 
     // eslint-disable-next-line no-unused-vars

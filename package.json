@@ -12,7 +12,8 @@
     "body-parser": "^1.19.0",
     "bunyan": "^1.8.15",
     "express": "^4.17.1",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "semver": "^7.3.5"
   },
   "devDependencies": {
     "chai": "^4.2.0",
