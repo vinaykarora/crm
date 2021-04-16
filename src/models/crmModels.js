@@ -11,7 +11,7 @@ export const ContactSchema = new Schema({
         type: String,
         require: 'Enter a last name'
     },
-    emaiil: {
+    email: {
         type: String,
     },
     company: {
